@@ -1,0 +1,13 @@
+[package]
+name = "downloader"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.31", features = ["derive"] }
+reqwest = { version = "0.12.12", features = ["stream", "json", "gzip"] }
+tokio = { version = "1", features = ["full"] }
+futures = "0.3.31"
+indicatif = "0.17.11"
+serde = { version = "1.0.218", features = ["derive"] }
+globset = "0.4.16"
