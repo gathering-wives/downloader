@@ -81,7 +81,7 @@ async fn main() -> Result<()> {
         let semaphore = semaphore.clone();
         let resource = resource.clone();
         let url = format!("{}/{}", resources_base, resource.dest);
-        let output_path = output_path.join(&resource.dest[1..]);
+        let output_path = output_path.join(&resource.dest);
 
         let pb = multi_progress.add(ProgressBar::new(resource.size));
         pb.set_style(style.clone());
